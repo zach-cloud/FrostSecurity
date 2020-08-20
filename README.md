@@ -14,7 +14,7 @@ Import FrostSecurity as such:
     <dependency>
         <groupId>com.github.zach-cloud</groupId>
         <artifactId>FrostSecurity</artifactId>
-        <version>1.0</version>
+        <version>1.1</version>
     </dependency>
 ```
 
