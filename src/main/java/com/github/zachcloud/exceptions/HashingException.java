@@ -1,4 +1,4 @@
-package exceptions;
+package com.github.zachcloud.exceptions;
 
 /**
  * An exception that is thrown when an encrypt/decrypt exception fails.

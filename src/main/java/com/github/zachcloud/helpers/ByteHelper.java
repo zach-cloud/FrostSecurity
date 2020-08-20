@@ -1,4 +1,4 @@
-package helpers;
+package com.github.zachcloud.helpers;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

@@ -1,4 +1,4 @@
-package frost;
+package com.github.zachcloud.frost;
 
 /**
  * Constants to use for hashing

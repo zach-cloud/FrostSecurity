@@ -1,6 +1,6 @@
-package stepDefs;
+package com.github.zachcloud.stepDefs;
 
-import frost.FrostSecurity;
+import com.github.zachcloud.frost.FrostSecurity;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -9,8 +9,8 @@ import org.junit.Assert;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
-import static utils.ByteUtils.bytesToString;
-import static utils.ByteUtils.stringToBytes;
+import static com.github.zachcloud.utils.ByteUtils.bytesToString;
+import static com.github.zachcloud.utils.ByteUtils.stringToBytes;
 
 public class FrostSecurityStepDefs {
 

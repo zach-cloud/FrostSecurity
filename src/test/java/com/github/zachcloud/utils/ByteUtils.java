@@ -1,4 +1,4 @@
-package utils;
+package com.github.zachcloud.utils;
 
 public class ByteUtils {
 

@@ -1,16 +1,16 @@
-package frost;
+package com.github.zachcloud.frost;
 
-import exceptions.EncryptionException;
-import exceptions.HashingException;
-import helpers.ByteHelper;
-import interfaces.IFrostSecurity;
+import com.github.zachcloud.exceptions.EncryptionException;
+import com.github.zachcloud.exceptions.HashingException;
+import com.github.zachcloud.helpers.ByteHelper;
+import com.github.zachcloud.interfaces.IFrostSecurity;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
-import static frost.SecurityConstants.MPQ_HASH_FILE_KEY;
-import static frost.SecurityConstants.MPQ_HASH_TABLE_OFFSET;
-import static helpers.ByteHelper.extractBytes;
+import static com.github.zachcloud.frost.SecurityConstants.MPQ_HASH_FILE_KEY;
+import static com.github.zachcloud.frost.SecurityConstants.MPQ_HASH_TABLE_OFFSET;
+import static com.github.zachcloud.helpers.ByteHelper.extractBytes;
 
 /**
  * MPQ Security
@@ -61,7 +61,7 @@ public final class FrostSecurity implements IFrostSecurity {
     }
 
     /**
-     * Saves numbers into the frost table for future use.
+     * Saves numbers into the seed table for future use.
      * See Storm documentation.
      */
     private void initializeEncryptionTable() {
@@ -144,7 +144,7 @@ public final class FrostSecurity implements IFrostSecurity {
     }
 
     /**
-     * Encrypts the specified integer array using the Storm frost algorithm
+     * Encrypts the specified integer array using the Storm algorithm
      * If input array is null, returns null
      *
      * @param src Integer source array
@@ -273,7 +273,7 @@ public final class FrostSecurity implements IFrostSecurity {
         } else if (operationType == OperationType.DECRYPT) {
             modified = decrypt(convertedNumericValues, key);
         } else {
-            throw new EncryptionException("Unknown frost type: " + operationType.name());
+            throw new EncryptionException("Unknown hash type: " + operationType.name());
         }
         // Cast back into byte array
         return ByteHelper.combineBytes(intArrayToBytes(modified), endBuffer);

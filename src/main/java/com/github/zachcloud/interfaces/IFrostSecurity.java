@@ -1,4 +1,4 @@
-package interfaces;
+package com.github.zachcloud.interfaces;
 
 import java.nio.ByteBuffer;
 
@@ -32,7 +32,7 @@ public interface IFrostSecurity {
     byte[] decryptBytes(byte[] src, int key);
 
     /**
-     * Encrypts the specified integer array using the Storm frost algorithm
+     * Encrypts the specified integer array using the storm algorithm
      * If input array is null, returns null
      *
      * @param src   Integer source array
