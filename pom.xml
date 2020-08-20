@@ -4,7 +4,7 @@
 
     <groupId>com.github.zach-cloud</groupId>
     <artifactId>FrostSecurity</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
     <name>Frost Security</name>
     <description>
         Implementation of Blizzard's MPQ security algorithms
@@ -263,7 +263,7 @@
         <connection>scm:git:git://github.com:zach-cloud/FrostSecurity.git</connection>
         <developerConnection>scm:git:git@github.com:zach-cloud/FrostSecurity.git</developerConnection>
         <url>https://github.com/zach-cloud/FrostSecurity</url>
-        <tag>HEAD</tag>
+        <tag>FrostSecurity-1.1</tag>
     </scm>
 
 </project>
